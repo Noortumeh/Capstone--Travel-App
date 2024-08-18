@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","mappings":"AAAAA,MAAM","sources":["webpack://capstone--travel-app/./src/client/index.js"],"sourcesContent":["alert(\"hi\");"],"names":["alert"],"sourceRoot":""}
