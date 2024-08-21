@@ -11,6 +11,7 @@ is given with its lowest and highest value, and displays an image of the locatio
 ### Modifying the user interface using innerHTML 
 ### In addition to using callback functions and how do we use them appropriately
 ### and asynchronous Javascript function
+### The user interface is designed using CSS and SASS
 
 # From the server side:
 ### I built node js and used the Express library to build a server to deal with the client and API from the server side instead of the client side.
