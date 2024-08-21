@@ -14,6 +14,10 @@ module.exports = {
     optimization: {
         minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})],
     },
+    output: {
+        libraryTarget: 'var',
+        library: 'Client'
+    },
     devtool: 'source-map', 
     module: {
         rules: [

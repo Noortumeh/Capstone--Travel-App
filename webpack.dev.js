@@ -1,12 +1,17 @@
 const webpack = require("webpack");
-path = require("path");
+const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     mode: 'development', 
     entry: "./src/client/index.js",
-    devtool: 'source-map', 
+    devtool: 'source-map',
+    stats: 'verbose',
+    output: {
+        libraryTarget: 'var',
+        library: 'Client'
+    }, 
     module: {
         rules: [
             {
