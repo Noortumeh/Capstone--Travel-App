@@ -9,6 +9,8 @@ module.exports = {
     devtool: 'source-map',
     stats: 'verbose',
     output: {
+        path: path.resolve(__dirname, 'dist'), 
+        filename: '[name].js',
         libraryTarget: 'var',
         library: 'Client'
     }, 

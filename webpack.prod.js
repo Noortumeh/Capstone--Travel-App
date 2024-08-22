@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 // mini scss
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 //service workers
 const WorkboxPlugin = require('workbox-webpack-plugin');
@@ -12,9 +12,11 @@ module.exports = {
     mode: 'production', 
     entry: "./src/client/index.js",
     optimization: {
-        minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})],
+        minimizer: [new TerserPlugin({}), new CssMinimizerPlugin(),],
     },
     output: {
+        path: path.resolve(__dirname, 'dist'), 
+        filename: '[name].js',
         libraryTarget: 'var',
         library: 'Client'
     },
