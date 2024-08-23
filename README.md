@@ -3,7 +3,8 @@
 A travel application has been created that obtains the location and date of the user’s desired trip, in addition to the weather condition on the specified date. If it is more than 7 days away, the expected weather condition
 is given with its lowest and highest value, and displays an image of the location using the information obtained from programming interfaces. External applications.
 3 APIs were used one for location (latitude and longitude) the second for weather and the third to get an image of the location
-### notes: Node.js version is v20.10.0
+### notes: Node.js version is v20.10.0, npm version : 10.8.2
+
 # Skills used:
 ## The main goal is to deal with APIs and how to fetch them. I used the axios library for this task
 ### I dealt with the concept of the document and getting elements from the DOM 
